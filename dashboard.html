@@ -3,12 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard - Medinova</title>
+  <title>Dashboard - El Ezaby</title>
   <link rel="stylesheet" href="CSS/style.css">
   <script defer src="JS/dashboard.js"></script>
 </head>
 <body>
-
+<header class="nav">
+  <div class="logo-container">
+    <a href="home.html">
+      <img src="/Image/elezaby1.png"  alt="El Ezaby Clinic Logo" class="logo" >
+    </a>
+  </div>
+  <nav id="nav-links">
+      <a href="home.html">Home</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
 <div class="dashboard-wrapper">
   <header class="dashboard-header">
     <h1>Welcome back, <span id="user-name"></span> 👋</h1>
@@ -37,11 +47,7 @@
     </div>
   </section>
 
-  <section class="quick-actions">
-    <div class="action-buttons">
-      <a href="home.html" class="action-btn">Home</a>
-    </div>
-  </section>
+
 </div>
 <footer>
   <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
