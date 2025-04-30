@@ -1658,7 +1658,16 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+/* Hide nav links by default on small screens */
+#nav-links {
+  display: none;
+  flex-direction: column; /* Optional: for vertical menu */
+}
 
+/* Show nav links when active */
+#nav-links.active {
+  display: flex;
+}
 .delete-btn:hover {
   background-color: #d32f2f;
 }
