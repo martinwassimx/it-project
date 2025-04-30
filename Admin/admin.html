@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="nav">
+  <div class="logo"><img src="/Image/elezaby1.png" alt="El Ezaby Clinic Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;"> </div>
+
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+<nav id="nav-links">
+  <a href="/home.html" class="btn">Home</a>
+</nav>
+</header>
+
+<section class="admin-dashboard">
+
+  <div class="dashboard-cards">
+    <div class="card">
+      <h4>Total Doctors</h4>
+      <p id="totalDoctors">0</p>
+    </div>
+    <div class="card">
+      <h4>Total Appointments</h4>
+      <p id="totalAppointments">0</p>
+    </div>
+    <div class="card">
+      <h4>Total Reviews</h4>
+      <p id="totalReviews">0</p>
+    </div>
+  </div>
+
+  <div class="admin-buttons">
+    <a href="admin-appointment.html" class="admin-link-btn">View Appointments</a>
+    <a href="admin-lab.html" class="admin-link-btn">View Lab Bookings</a>
+    <a href="admin-reviews.html" class="admin-link-btn">View Reviews</a>
+    <a href="admin-contacts.html" class="admin-link-btn">View Contacts</a>
+    <a href="admin-prescription.html" class="admin-link-btn">Prescriptions</a>
+    <a href="admin-applicants.html" class="admin-link-btn">Applicants</a>
+    <a href="admin-telemedicine.html" class="admin-link-btn">Telemedicine</a>
+  </div>
+</section>
+
+
+<footer>
+  <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="/JS/static_doctors.js"></script>
+<script src="/JS/burger-menu.js"></script>
+<script src="/JS/admin.js"></script>
+
+
+</body>
+</html>

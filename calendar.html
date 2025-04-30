@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Calendar | Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo-container">
+    <img src="/Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
+  </div>
+  <nav id="nav-links">
+      <a href="home.html">Home</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+<section class="appointment-calendar">
+  <h2>Appointment Calendar</h2>
+
+  <div class="calendar-grid">
+    <div class="calendar-header">Monday</div>
+    <div class="calendar-header">Tuesday</div>
+    <div class="calendar-header">Wednesday</div>
+    <div class="calendar-header">Thursday</div>
+    <div class="calendar-header">Friday</div>
+    <div class="calendar-header">Saturday</div>
+    <div class="calendar-header">Sunday</div>
+
+    <div id="monday" class="calendar-day"></div>
+    <div id="tuesday" class="calendar-day"></div>
+    <div id="wednesday" class="calendar-day"></div>
+    <div id="thursday" class="calendar-day"></div>
+    <div id="friday" class="calendar-day"></div>
+    <div id="saturday" class="calendar-day"></div>
+    <div id="sunday" class="calendar-day"></div>
+  </div>
+
+  <div class="no-appointments" id="noAppointmentsMessage" style="display:none;">
+    No appointments booked yet.
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="/JS/calendar.js"></script>
+
+</body>
+</html>

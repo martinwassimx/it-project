@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+<body>
+    <header class="nav">
+        <div class="logo-container">
+          <img src="/Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
+        </div>
+        <nav id="nav-links">
+            <a href="admin.html">Back To Admin Panal</a>
+          </nav>
+          <div class="menu-toggle" id="menu-toggle">☰</div>
+        </header>
+
+  <div class="appointments-management">
+    <h2>Appointments</h2>
+    <div style="text-align: right; margin-bottom: 10px;">
+      <button class="login-btn" id="exportCSV">Export CSV</button>
+    </div>
+
+    <div class="appointments-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="adminAppointmentsTable">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 Medinova - All rights reserved.
+</footer>
+
+<script src="/JS/static_doctors.js"></script>
+<script src="/JS/admin-appointments.js"></script>
+</body>
+</html>

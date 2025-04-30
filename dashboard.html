@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <script defer src="/JS/dashboard.js"></script>
+</head>
+<body>
+
+<div class="dashboard-wrapper">
+  <header class="dashboard-header">
+    <h1>Welcome back, <span id="user-name"></span> 👋</h1>
+    <button id="logout-btn" class="logout-btn">Log Out</button>
+  </header>
+
+  <section class="profile-info">
+    <h2>Profile Information</h2>
+    <div class="info-cards">
+      <div class="info-card">
+        <h4>Username</h4>
+        <p id="username-display"></p>
+      </div>
+      <div class="info-card">
+        <h4>Email</h4>
+        <p id="email-display"></p>
+      </div>
+      <div class="info-card">
+        <h4>Phone Number</h4>
+        <p id="phone-display"></p>
+      </div>
+      <div class="info-card">
+        <h4>Age</h4>
+        <p id="age-display"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-actions">
+    <div class="action-buttons">
+      <a href="home.html" class="action-btn">Home</a>
+    </div>
+  </section>
+</div>
+<footer>
+  <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

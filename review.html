@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leave a Review | Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+<body>
+
+<header class="nav">
+    <div class="logo-container">
+      <img src="/Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
+    </div>
+    <nav id="nav-links">
+        <a href="home.html">Home</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+<section class="search-page">
+  <h2>What Our Patients Say</h2>
+  <div id="all-reviews" class="doctors-grid">
+  </div>
+</section>
+
+<section class="search-page">
+  <h2>Leave a Complaint or Review</h2>
+  
+  <div class="doctors-grid">
+    <div class="doctor-card">
+      <form id="review-form" class="new-form-box">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="type">Type</label>
+        <select id="type" required>
+          <option value="">Select Type</option>
+          <option value="Complaint">Complaint</option>
+          <option value="Review">Review</option>
+        </select>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Write your complaint or review here..." required></textarea>
+
+        <button type="submit" class="login-btn">Submit</button>
+
+        <p id="review-message" class="new-register-message"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+<script src="/JS/burger-menu.js"></script>
+<script src="/JS/review-form.js"></script>
+
+</body>
+</html>

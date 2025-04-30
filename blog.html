@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Blog & Articles | Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+<body>
+
+<header class="nav">
+    <div class="logo-container">
+      <img src="/Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
+    </div>
+    <nav id="nav-links">
+        <a href="home.html">Home</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+<section class="blog-section">
+    <h2 class="section-title">Health Blog & Articles</h2>
+  
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>The Importance of Regular Checkups</h3>
+        <p>Why visiting your doctor regularly can help detect diseases early and improve your health...</p>
+        <a href="https://www.betterhealth.vic.gov.au/health/servicesandsupport/regular-health-checks" class="read-more-btn">Read More</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Top 10 Healthy Habits for 2025</h3>
+        <p>Simple daily habits that will keep you mentally and physically strong all year long...</p>
+        <a href="https://www.who.int/westernpacific/newsroom/feature-stories/item/10-health-tips-for-2025" class="read-more-btn">Read More</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Understanding Blood Test Reports</h3>
+        <p>Confused by your results? Here's how to interpret common blood test components...</p>
+        <a href="https://my.clevelandclinic.org/health/diagnostics/24508-blood-tests" class="read-more-btn">Read More</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Managing Stress the Healthy Way</h3>
+        <p>Explore how stress affects your body and what lifestyle changes can help reduce it...</p>
+        <a href="https://www.mentalhealth.org.uk/explore-mental-health/publications/how-manage-and-reduce-stress" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+  </section>
+  
+
+<footer>
+    <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+<script src="/JS/burger-menu.js"></script>
+
+</body>
+</html>

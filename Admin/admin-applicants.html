@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Job Applicants | Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header class="nav">
+        <div class="logo-container">
+          <img src="/Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
+        </div>
+        <nav id="nav-links">
+            <a href="admin.html">Back To Admin Panal</a>
+          </nav>
+          <div class="menu-toggle" id="menu-toggle">☰</div>
+        </header>
+
+<section class="admin-dashboard">
+  <h2>Job Applications</h2>
+
+  <div class="admin-controls">
+    <button class="login-btn" id="exportCSV">Export to CSV</button>
+    <button class="login-btn danger-btn" id="deleteAllApplicants">Delete All</button>
+  </div>
+
+  <div class="admin-table-container">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Resume</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="applicantsTable">
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  © 2025 Medinova - All rights reserved.
+</footer>
+
+<!-- JS -->
+<script src="/JS/burger-menu.js"></script>
+<script src="/JS/admin-applicants.js"></script>
+
+</body>
+</html>

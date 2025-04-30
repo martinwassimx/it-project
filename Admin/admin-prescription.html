@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prescription Management - Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+<body>
+  <header class="nav">
+    <div class="logo-container">
+      <img src="/Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
+    </div>
+    <nav id="nav-links">
+        <a href="admin.html">Back To Admin Panal</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+<div class="dashboard-wrapper">
+  <header class="dashboard-header">
+    <h1>Prescription Management</h1>
+  </header>
+  <section class="profile-info">
+    <h2>Add New Prescription</h2>
+    <form id="prescription-form" class="form-box">
+      <label for="patientName">Patient Name</label>
+      <input type="text" id="patientName" required>
+
+      <label for="doctorName">Doctor Name</label>
+      <input type="text" id="doctorName" required>
+
+      <label for="medicine">Medicine Name</label>
+      <input type="text" id="medicine" required>
+
+      <label for="dosage">Dosage</label>
+      <input type="text" id="dosage" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" required>
+
+      <button type="submit" class="login-btn">Save Prescription</button>
+    </form>
+  </section>
+
+  <section class="quick-actions">
+    <h2>All Prescriptions</h2>
+    <div id="prescription-list" class="info-cards">
+    </div>
+  </section>
+</div>
+<script src="/JS/burger-menu.js"></script>
+<script src="/JS/prescription.js"></script>
+</body>
+</html>

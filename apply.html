@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for a Job | Medinova Careers</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+<body>
+
+<header class="nav">
+    <div class="logo-container">
+      <img src="/Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
+    </div>
+    <nav id="nav-links">
+        <a href="home.html">Home</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+<section class="search-page">
+  <h2>Job Application</h2>
+  <p style="text-align:center; max-width:700px; margin: 0 auto 2rem;">
+    Complete the form below to apply for a position at Medinova. Our team will review your application and contact you soon.
+  </p>
+
+  <div class="application-container">
+    <form id="jobApplicationForm" class="form-box">
+
+      <label for="position">Position Applying For</label>
+      <select id="position" required>
+        <option value="">Select a position</option>
+        <option value="Registered Nurse">Registered Nurse</option>
+        <option value="Medical Receptionist">Medical Receptionist</option>
+        <option value="Lab Technician">Lab Technician</option>
+        <option value="General Practitioner">General Practitioner</option>
+      </select>
+
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="0123456789" required />
+
+      <label for="resume">Upload Resume (PDF)</label>
+      <input type="file" id="resume" accept=\"application/pdf\" required />
+
+      <label for="coverLetter">Cover Letter</label>
+      <textarea id="coverLetter" rows="5" placeholder="Write your cover letter here..." required></textarea>
+
+      <button type="submit" class="login-btn">Submit Application</button>
+      <p id="formMessage" class="register-message"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+    <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+<script src="/JS/burger-menu.js"></script>
+<script src="/JS/apply.js"></script>
+
+
+</body>
+</html>

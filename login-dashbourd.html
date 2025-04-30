@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <script defer src="/JS/login.js"></script>
+</head>
+<body>
+
+<div class="page-wrapper">
+  <div class="left-side">
+    <header class="logo-box">
+      <img src="/Image/elezabywithoutbg1.png" alt="El Ezaby Clinic Logo">
+    </header>
+
+    <main class="login-container">
+      <h1>Welcome Back</h1>
+      <p class="subheading">Sign in to your account</p>
+
+      <div class="form-box">
+        <form id="login-form">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Password</label>
+          <div class="password-field">
+            <input type="password" id="password" name="password" required>
+            <button type="button" id="togglePassword">SHOW</button>
+          </div>
+
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <p id="login-message" class="register-message"></p>
+
+        <p class="create-account">Don't have an account? <a href="register.html">Register here.</a></p>
+        <p class="support">Need help? <a href="contact-login.html">Contact support</a>.</p>
+      </div>
+    </main>
+  </div>
+
+
+</div>
+
+<footer>
+  <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

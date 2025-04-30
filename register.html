@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Medinova</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <script defer src="/JS/register.js"></script>
+</head>
+<body>
+
+<div class="page-wrapper">
+  <div class="left-side">
+    <header class="logo-box">
+      <img src="/Image/elezabywithoutbg1.png" alt="El Ezaby Clinic Logo">
+    </header>
+
+    <main class="login-container">
+      <h1>Create Account</h1>
+      <p class="subheading">Register for Patient Portal</p>
+
+      <div class="form-box">
+        <form id="register-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" required>
+
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="0" required>
+
+          <label for="password">Password</label>
+          <div class="password-field">
+            <input type="password" id="password" name="password" required>
+            <button type="button" id="togglePassword">SHOW</button>
+          </div>
+
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+
+          <button type="submit" class="login-btn">Register</button>
+        </form>
+
+        <p id="register-message" class="register-message"></p>
+
+        <p class="create-account">Already have an account? <a href="index.html">Log in here.</a></p>
+        <p class="support">Need help? <a href="contact-login.html">Contact support</a>.</p>
+      </div>
+    </main>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>>
+
+</body>
+</html>
