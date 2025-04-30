@@ -1,4 +1,4 @@
-/* style.css */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -276,7 +276,7 @@
     line-height: 1.5;
   }
   .packages {
-    background: #fff; /* plain white */
+    background: #fff;
     padding: 80px 20px;
     text-align: center;
   }
@@ -369,7 +369,7 @@
   }
 
 
-/* Hero */
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -408,7 +408,7 @@
   color: #0057b8;
 }
 
-/* About Section */
+
 .about {
   display: flex;
   padding: 50px;
@@ -434,7 +434,7 @@
   margin-top: 10px;
   line-height: 1.6;
 }
-/* ===== Search Doctors Full Page ===== */
+
 .search-page {
   padding: 80px 20px;
   background-color: #f8f9fc;
@@ -502,7 +502,7 @@
   font-size: 1rem;
   color: #555;
 }
-/* ===== Book Appointment Page ===== */
+
 .book-appointment-page {
   padding: 80px 20px;
   background-color: #f8f9fc;
@@ -569,7 +569,7 @@
   text-align: center;
 }
 
-/* Calendar Style */
+
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -606,22 +606,22 @@
 }
 .appointment-calendar {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  flex-direction: column; /* Align items in a column */
-  height: 80vh; /* Make the container take up 80% of the viewport height */
-  text-align: center; /* Center text horizontally */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  text-align: center;
 }
 
-/* Styling for the calendar heading */
+
 .appointment-calendar h2 {
   font-size: 2rem;
   color: #333;
-  margin-bottom: 20px; /* Adds spacing below the heading */
+  margin-bottom: 20px;
 }
-/* admin.css */
 
-/* Dashboard cards */
+
+
 .dashboard-cards {
   display: flex;
   justify-content: center;
@@ -650,7 +650,7 @@
   color: #1e1e2f;
 }
 
-/* Appointments Table */
+
 .appointments-management {
   margin: 50px auto;
   max-width: 1200px;
@@ -697,10 +697,10 @@ th, td {
 .action-btn:hover {
   background-color: #c9302c;
 }
-/* ===== Responsive Design for Phones Only ===== */
+
 @media (max-width: 768px) {
 
-  /* Navbar */
+ 
   .nav {
     flex-direction: column;
     align-items: center;
@@ -713,7 +713,7 @@ th, td {
     margin: 5px 0;
   }
 
-  /* Hero Section */
+ 
   .hero {
     flex-direction: column;
     text-align: center;
@@ -744,7 +744,7 @@ th, td {
     margin-top: 20px;
   }
 
-  /* About Section */
+ 
   .about {
     flex-direction: column;
     text-align: center;
@@ -761,21 +761,21 @@ th, td {
     margin-bottom: 15px;
   }
 
-  /* Service Cards */
+ 
   .service-cards.grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
   }
 
-  /* Packages */
+ 
   .packages-container {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
   }
 
-  /* Footer */
+ 
   footer {
     text-align: center;
     padding: 20px;
@@ -821,7 +821,7 @@ th, td {
   }
   
 }
-/* ===== Mobile Burger Menu ===== */
+
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -829,7 +829,7 @@ th, td {
   color: #0057b8;
 }
 
-/* Only show burger menu on small screens */
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -861,7 +861,7 @@ th, td {
     text-align: center;
   }
 }
-/* Dashboard Styles */
+
 .dashboard-wrapper {
   padding: 40px 20px;
   max-width: 1200px;
@@ -942,7 +942,7 @@ th, td {
 .action-btn:hover {
   background-color: #0057b8;
 }
-/* Form input and textarea styling */
+
 input, select, textarea {
   width: 100%;
   padding: 10px 12px;
@@ -960,13 +960,13 @@ input:focus, select:focus, textarea:focus {
   outline: none;
 }
 
-/* Specific textarea tweak */
+
 textarea {
   resize: vertical;
   min-height: 100px;
 }
 
-/* Button appearance (if not already styled) */
+
 button.login-btn {
   background-color: #0057b8;
   color: white;
@@ -1010,7 +1010,7 @@ button.login-btn:hover {
 
 
 
-/* Button layout */
+
 .admin-buttons {
   display: flex;
   justify-content: center;
@@ -1214,7 +1214,7 @@ button.login-btn:hover {
 .danger-btn:hover {
   background-color: #b71c1c;
 }
-/* Careers Section Enhancements */
+
 .search-page h2 {
   font-size: 2rem;
   color: #0057b8;
@@ -1304,7 +1304,7 @@ form select, form input[type=\"file\"] {
 .application-container .form-box button:hover {
   background-color: #004494;
 }
-/* Error page styles */
+
 .error-container {
   text-align: center;
   padding: 50px;
@@ -1334,7 +1334,7 @@ form select, form input[type=\"file\"] {
 .error-container .btn:hover {
   background-color: #004494;
 }
-/* Global styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -1346,7 +1346,7 @@ body {
   background-color: #f4f7fa;
 }
 
-/* Navbar styles */
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -1363,7 +1363,7 @@ body {
 }
 
 .logo {
-  height: 45px; /* Adjust logo size */
+  height: 45px;
 }
 
 #nav-links {
@@ -1382,7 +1382,7 @@ body {
 }
 
 #nav-links a:hover {
-  color: #0057b8; /* Change color on hover */
+  color: #0057b8;
 }
 
 .profile-btn {
@@ -1398,7 +1398,7 @@ body {
   background-color: #004494;
 }
 
-/* Mobile Menu Toggle */
+
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -1409,9 +1409,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* For mobile screens */
+ 
   #nav-links {
-    display: none; /* Hide the links by default */
+    display: none;
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -1431,14 +1431,14 @@ body {
   }
 
   .menu-toggle {
-    display: block; /* Show the hamburger icon */
+    display: block;
   }
 
   #nav-links.active {
-    display: flex; /* Show links when active */
+    display: flex;
   }
 }
-/* Global styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -1450,7 +1450,7 @@ body {
   background-color: #f4f7fa;
 }
 
-/* Navbar styles */
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -1487,7 +1487,7 @@ body {
   color: #0057b8;
 }
 
-/* Lab Test Booking Section */
+
 .search-page {
   padding: 40px 20px;
   text-align: center;
@@ -1554,16 +1554,16 @@ body {
   margin-top: 15px;
 }
 
-/* Footer */
+
 footer {
   padding: 20px;
   text-align: center;
   background-color: #ffffff;
   color: #333;
   box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: auto; /* This ensures the footer sticks to the bottom */
+  margin-top: auto;
 }
-/* Global styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -1575,7 +1575,7 @@ body {
   background-color: #f4f7fa;
 }
 
-/* Navbar styles */
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -1603,7 +1603,7 @@ body {
   font-weight: 600;
 }
 
-/* Admin Dashboard Section */
+
 .admin-dashboard {
   padding: 40px 20px;
   text-align: center;
@@ -1658,16 +1658,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-/* Hide nav links by default on small screens */
-#nav-links {
-  display: none;
-  flex-direction: column; /* Optional: for vertical menu */
-}
 
-/* Show nav links when active */
-#nav-links.active {
-  display: flex;
-}
 .delete-btn:hover {
   background-color: #d32f2f;
 }
