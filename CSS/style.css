@@ -1662,3 +1662,12 @@ body {
 .delete-btn:hover {
   background-color: #d32f2f;
 }
+#nav-links {
+  display: none;
+  flex-direction: column; 
+}
+
+
+#nav-links.active {
+  display: flex;
+}
