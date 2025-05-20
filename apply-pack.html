@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for a Job | El Ezaby Careers</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+<body>
+
+<header class="nav">
+    <div class="logo-container">
+      <a href="home.html">
+        <img src="/Image/elezaby1.png"  alt="El Ezaby Clinic Logo" class="logo" >
+      </a>
+    </div>
+    <nav id="nav-links">
+        <a href="home.html">Home</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+<section class="search-page">
+  <h2>Affordable Healthcare Plans</h2>
+
+
+  <div class="application-container">
+    <form id="jobApplicationForm" class="form-box">
+
+      <label for="position">Plans</label>
+      <select id="position" required>
+        <option value="">Select a Plan</option>
+        <option value="Pregnancy Care">Pregnancy Care $49</option>
+        <option value="Health Checkup">Health Checkup $99</option>
+        <option value="Dental Care">Dental Care $149</option>
+      </select>
+
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="0123456789" required />
+
+      <button type="submit" class="login-btn">Submit Application</button>
+      <p id="formMessage" class="register-message"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+    <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+<script src="/JS/burger-menu.js"></script>
+<script src="/JS/apply.js"></script>
+
+
+</body>
+</html>
