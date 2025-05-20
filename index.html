@@ -3,46 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - El Ezaby Clinic</title>
+  <title>El Ezaby Home</title>
   <link rel="stylesheet" href="CSS/style.css" />
-  <script defer src="JS/login.js"></script>
 </head>
 <body>
-
-<div class="page-wrapper">
-  <div class="left-side">
-    <header class="logo-box">
-      <img src="Image/elezabywithoutbg1.png" alt="El Ezaby Clinic Logo">
-    </header>
-
-    <main class="login-container">
-      <h1>Welcome Back</h1>
-      <p class="subheading">Sign in to your account</p>
-
-      <div class="form-box">
-        <form id="login-form">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="password">Password</label>
-          <div class="password-field">
-            <input type="password" id="password" name="password" required>
-            <button type="button" id="togglePassword">SHOW</button>
-          </div>
-
-          <button type="submit" class="login-btn">Login</button>
-        </form>
-
-        <p id="login-message" class="register-message"></p>
-
-        <p class="create-account">Don't have an account? <a href="register.html">Register here.</a></p>
-        <p class="support">Need help? <a href="contact-login.html">Contact support</a>.</p>
+  <!-- Navbar with Dropdown (for pages like Book Appointment) -->
+  <header class="nav nav-with-dropdown">
+    <div class="logo-container">
+      <a href="home.html">
+        <img src="Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
+      </a>
+    </div>
+    <nav id="nav-links">
+      <a href="services.html">Services</a>
+      <a href="search.html">Find Doctor</a>
+      <a href="book.html">Book Appointment</a>
+      <div class="dropdown">
+        <a href="" class="dropdown-toggle">Menu<span class="arrow">▼</span></a>
+        <div class="dropdown-menu">
+          <a href="doctor-profiles.html">Our Doctors</a>
+          <a href="calendar.html">Calendar</a>
+          <a href="lab-test.html">Lab Test Booking</a>
+          <a href="telemedicine.html">Telemedicine Consultation</a>
+          <a href="blog.html">Health Blog & Articles</a>
+          <a href="view-prescriptions.html">Prescriptions</a>
+          <a href="insurance.html">Insurance &amp; Payment Options</a>
+          <a href="review.html">Reviews</a>
+          <a href="careers.html">Careers</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
       </div>
-    </main>
+      <a href="dashboard.html" class="profile-btn">Profile</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0057b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Welcome to El Ezaby Clinic</h2>
+    <h1>Best Healthcare Solution<br>In Your City</h1>
+    <div class="hero-buttons">
+      <button class="primary-btn" onclick="window.location.href='search.html'">Find Doctor</button>
+      <button class="secondary-btn" onclick="window.location.href='book.html'">Book Appointment</button>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="/Image/elezabywithoutbg.png" alt="Doctor">
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-image">
+    <img src="/Image/Price/1.png" alt="About Us" />
+  </div>
+  <div class="about-text">
+    <h3>About Us</h3>
+    <h2>Best Medical Care For You and Your Family</h2>
+    <p>
+      We provide world-class healthcare services with experienced doctors, advanced technology,
+      and a commitment to your well-being. Our mission is to deliver exceptional patient-centered care.
+    </p>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="section-title">
+    <h3>Our Services</h3>
+    <h2>Excellent Medical Facilities</h2>
   </div>
 
+  <div class="service-cards grid">
+    <div class="card">
+      <img src="/Image/Small Logos/cardiogram.png" alt="Emergency Care">
+      <h4>Emergency Care</h4>
+      <p>Immediate attention for urgent medical cases 24/7 with professional teams.</p>
+    </div>
+    <div class="card">
+      <img src="/Image/Small Logos/check-up.png" alt="Operation & Surgery">
+      <h4>Operation & Surgery</h4>
+      <p>Fully equipped surgical rooms with highly experienced surgeons.</p>
+    </div>
+    <div class="card">
+      <img src="/Image/Small Logos/consultation.png" alt="Outdoor Checkup">
+      <h4>Outdoor Checkup</h4>
+      <p>Routine health checkups and diagnostics at your convenience.</p>
+    </div>
+    <div class="card">
+      <img src="/Image/Small Logos/ambulance.png" alt="Ambulance Service">
+      <h4>Ambulance Service</h4>
+      <p>Fast and reliable ambulance service available 24/7 for emergencies.</p>
+    </div>
+    <div class="card">
+      <img src="/Image/Small Logos/medicine.png" alt="Medicine & Pharmacy">
+      <h4>Medicine & Pharmacy</h4>
+      <p>Wide range of pharmaceutical services with quality assurance and reliability.</p>
+    </div>
+    <div class="card">
+      <img src="/Image/Small Logos/microscope.png" alt="Blood Testing">
+      <h4>Blood Testing</h4>
+      <p>Advanced laboratory services providing accurate and quick test results.</p>
+    </div>
+  </div>
+</section>
 
-</div>
+<section class="packages">
+  <div class="section-title">
+    <h3>Medical Packages</h3>
+    <h2>Affordable Healthcare Plans</h2>
+  </div>
+
+  <div class="packages-container">
+    <div class="package-card">
+      <div class="card-top" style="background-image: url('/Image/Price/price-1.jpg');">
+        <h4>Pregnancy Care</h4>
+        <h2>$49<small>/ Year</small></h2>
+      </div>
+      <div class="card-bottom">
+        <ul>
+          <li>Emergency Medical Treatment</li>
+          <li>Highly Experienced Doctors</li>
+          <li>Highest Success Rate</li>
+          <li>Telephone Service</li>
+        </ul>
+        <a href="apply-pack.html" class="apply-btn">Apply Now </a>
+      </div>
+    </div>
+
+    <div class="package-card">
+      <div class="card-top" style="background-image: url('/Image/Price/price-2.jpg');">
+        <h4>Health Checkup</h4>
+        <h2>$99<small>/ Year</small></h2>
+      </div>
+      <div class="card-bottom">
+        <ul>
+          <li>Emergency Medical Treatment</li>
+          <li>Highly Experienced Doctors</li>
+          <li>Highest Success Rate</li>
+          <li>Telephone Service</li>
+        </ul>
+        <a href="apply-pack.html" class="apply-btn">Apply Now </a>
+      </div>
+    </div>
+
+    <div class="package-card">
+      <div class="card-top" style="background-image: url('/Image/Price/price-3.jpg');">
+        <h4>Dental Care</h4>
+        <h2>$149<small>/ Year</small></h2>
+      </div>
+      <div class="card-bottom">
+        <ul>
+          <li>Emergency Medical Treatment</li>
+          <li>Highly Experienced Doctors</li>
+          <li>Highest Success Rate</li>
+          <li>Telephone Service</li>
+        </ul>
+        <a href="apply-pack.html" class="apply-btn">Apply Now </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer>
   <p>&copy; 1998 - <span id="year"></span> El Ezaby Clinic. All rights reserved.</p>
@@ -52,5 +178,7 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
+
+<script src="JS/burger-menu.js"></script>
 </body>
 </html>
