@@ -4,31 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>El Ezaby Home</title>
-  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="/CSS/style.css" />
 </head>
 <body>
-
-<header class="nav">
-  <div class="logo-container">
-    <img src="Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
-  </div>
-  <nav id="nav-links">
-    <a href="doctor-profiles.html">Our Doctors</a>
-    <a href="search.html">Find Doctor</a>
-      <a href="book.html">Book Appointment</a>
-      <a href="calendar.html">Calendar</a>
-      <a href="lab-test.html">Lab Test</a>
-      <a href="telemedicine.html">Telemedicine Consultation</a>
-      <a href="blog.html">Blog</a>
-      <a href="view-prescriptions.html">Prescriptions</a>
-      <a href="careers.html">Careers</a>
+  <!-- Navbar with Dropdown (for pages like Book Appointment) -->
+  <header class="nav nav-with-dropdown">
+    <div class="logo-container">
+      <a href="home.html">
+        <img src="/Image/elezaby1.png" alt="El Ezaby Clinic Logo" class="logo">
+      </a>
+    </div>
+    <nav id="nav-links">
       <a href="services.html">Services</a>
-      <a href="insurance.html">Insurance & Payment Options</a>
-      <a href="review.html">Reviews</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="dashboard.html" class="btn">Profile</a>
+      <a href="search.html">Find Doctor</a>
+      <a href="book.html">Book Appointment</a>
+      <div class="dropdown">
+        <a href="" class="dropdown-toggle">Menu<span class="arrow">▼</span></a>
+        <div class="dropdown-menu">
+          <a href="doctor-profiles.html">Our Doctors</a>
+          <a href="calendar.html">Calendar</a>
+          <a href="lab-test.html">Lab Test Booking</a>
+          <a href="telemedicine.html">Telemedicine Consultation</a>
+          <a href="blog.html">Health Blog & Articles</a>
+          <a href="view-prescriptions.html">Prescriptions</a>
+          <a href="insurance.html">Insurance &amp; Payment Options</a>
+          <a href="review.html">Reviews</a>
+          <a href="careers.html">Careers</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+      <a href="dashboard.html" class="profile-btn">Profile</a>
     </nav>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0057b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
   </header>
 
 <section class="hero">
@@ -41,13 +55,13 @@
     </div>
   </div>
   <div class="hero-image">
-    <img src="Image/elezabywithoutbg.png" alt="Doctor">
+    <img src="/Image/elezabywithoutbg.png" alt="Doctor">
   </div>
 </section>
 
 <section id="about" class="about">
   <div class="about-image">
-    <img src="Image/medical-tips.jpg" alt="About Us" />
+    <img src="/Image/Price/1.png" alt="About Us" />
   </div>
   <div class="about-text">
     <h3>About Us</h3>
@@ -67,32 +81,32 @@
 
   <div class="service-cards grid">
     <div class="card">
-      <img src="Image/Small Logos/cardiogram.png" alt="Emergency Care">
+      <img src="/Image/Small Logos/cardiogram.png" alt="Emergency Care">
       <h4>Emergency Care</h4>
       <p>Immediate attention for urgent medical cases 24/7 with professional teams.</p>
     </div>
     <div class="card">
-      <img src="Image/Small Logos/check-up.png" alt="Operation & Surgery">
+      <img src="/Image/Small Logos/check-up.png" alt="Operation & Surgery">
       <h4>Operation & Surgery</h4>
       <p>Fully equipped surgical rooms with highly experienced surgeons.</p>
     </div>
     <div class="card">
-      <img src="Image/Small Logos/consultation.png" alt="Outdoor Checkup">
+      <img src="/Image/Small Logos/consultation.png" alt="Outdoor Checkup">
       <h4>Outdoor Checkup</h4>
       <p>Routine health checkups and diagnostics at your convenience.</p>
     </div>
     <div class="card">
-      <img src="Image/Small Logos/ambulance.png" alt="Ambulance Service">
+      <img src="/Image/Small Logos/ambulance.png" alt="Ambulance Service">
       <h4>Ambulance Service</h4>
       <p>Fast and reliable ambulance service available 24/7 for emergencies.</p>
     </div>
     <div class="card">
-      <img src="Image/Small Logos/medicine.png" alt="Medicine & Pharmacy">
+      <img src="/Image/Small Logos/medicine.png" alt="Medicine & Pharmacy">
       <h4>Medicine & Pharmacy</h4>
       <p>Wide range of pharmaceutical services with quality assurance and reliability.</p>
     </div>
     <div class="card">
-      <img src="Image/Small Logos/microscope.png" alt="Blood Testing">
+      <img src="/Image/Small Logos/microscope.png" alt="Blood Testing">
       <h4>Blood Testing</h4>
       <p>Advanced laboratory services providing accurate and quick test results.</p>
     </div>
@@ -107,7 +121,7 @@
 
   <div class="packages-container">
     <div class="package-card">
-      <div class="card-top" style="background-image: url('Image/Price/price-1.jpg');">
+      <div class="card-top" style="background-image: url('/Image/Price/price-1.jpg');">
         <h4>Pregnancy Care</h4>
         <h2>$49<small>/ Year</small></h2>
       </div>
@@ -118,12 +132,12 @@
           <li>Highest Success Rate</li>
           <li>Telephone Service</li>
         </ul>
-        <button class="apply-btn">Apply Now</button>
+        <a href="apply-pack.html" class="apply-btn">Apply Now </a>
       </div>
     </div>
 
     <div class="package-card">
-      <div class="card-top" style="background-image: url('Image/Price/price-2.jpg');">
+      <div class="card-top" style="background-image: url('/Image/Price/price-2.jpg');">
         <h4>Health Checkup</h4>
         <h2>$99<small>/ Year</small></h2>
       </div>
@@ -134,12 +148,12 @@
           <li>Highest Success Rate</li>
           <li>Telephone Service</li>
         </ul>
-        <button class="apply-btn">Apply Now</button>
+        <a href="apply-pack.html" class="apply-btn">Apply Now </a>
       </div>
     </div>
 
     <div class="package-card">
-      <div class="card-top" style="background-image: url('Image/Price/price-3.jpg');">
+      <div class="card-top" style="background-image: url('/Image/Price/price-3.jpg');">
         <h4>Dental Care</h4>
         <h2>$149<small>/ Year</small></h2>
       </div>
@@ -150,7 +164,7 @@
           <li>Highest Success Rate</li>
           <li>Telephone Service</li>
         </ul>
-        <button class="apply-btn">Apply Now</button>
+        <a href="apply-pack.html" class="apply-btn">Apply Now </a>
       </div>
     </div>
   </div>
@@ -165,6 +179,6 @@
 </script>
 
 
-<script src="JS/burger-menu.js"></script>
+<script src="/JS/burger-menu.js"></script>
 </body>
 </html>
